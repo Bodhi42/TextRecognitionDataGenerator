@@ -112,6 +112,9 @@ def create_strings_randomly(
                 [chr(i) for i in range(19968, 40908)]
             )  # unicode range for common and uncommon kanji
             # https://stackoverflow.com/questions/19899554/unicode-range-for-japanese
+        elif lang == "ru":
+            pool += "".join([chr(i) for i in range(1040, 1104)])  # Cyrillic letters
+            pool += "Ёё"
         else:
             pool += string.ascii_letters
     if num:

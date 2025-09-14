@@ -164,13 +164,19 @@ Simplified:
 
 ![28](samples/28.jpg "1")
 
-## Create images with Japanese text 
+## Create images with Japanese text
 
 It is simple! Just do `trdg -l ja -c 1000 -w 5`!
 
-Output 
+Output
 
 ![29](samples/29.jpg "2")
+
+
+## Create images with Russian text
+
+It is simple! Just do `trdg -l ru -c 1000 -w 5`! Make sure to supply a font that
+supports Cyrillic via `--font_dir` or by placing it in `trdg/fonts/ru`.
 
 
 ## Add new fonts
@@ -184,6 +190,9 @@ The script picks a font at random from the *fonts* directory.
 | fonts/ko | Korean |
 | fonts/ja | Japanese |
 | fonts/th | Thai |
+
+Fonts for Russian are not bundled; create `fonts/ru` with your own `.ttf` files
+or point `--font_dir` to a directory of Cyrillic fonts.
 
 Simply add/remove fonts until you get the desired output.
 
